@@ -5,6 +5,7 @@ function takeANumber(KatzDeliLine) {
   //KatzDeliLine.push(Ada);
   counter += 1
   KatzDeliLine.push(counter)
+  
   return `Welcome, You are number ${counter} in line.`;
 }
 
