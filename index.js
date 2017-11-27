@@ -1,9 +1,11 @@
 var katzDeli = [];
 
-function takeANumber(KatzDeliLine, Ada) {
-  KatzDeliLine.push(Ada);
-  var num = parseInt(KatzDeliLine.length);
-  return `Welcome, ${Ada}. You are number ${num} in line.`;
+var counter = 0
+function takeANumber(KatzDeliLine) {
+  //KatzDeliLine.push(Ada);
+  counter += 1
+  KatzDeliLine.push(counter)
+  return `Welcome, You are number ${counter} in line.`;
 }
 
 function nowServing(deliLine) {
@@ -28,4 +30,3 @@ function currentLine(katzDeliLine) {
     }
     return `The line is currently: ${array.join(', ')}`
   }
-}
